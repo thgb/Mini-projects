@@ -1,14 +1,12 @@
-# template for "Guess the number" mini-project
-# input will come from buttons and an input field
+# input will come from buttons and an input field from simplegui module
 # all output for the game will be printed in the console
-
 
 import simplegui
 import random
 import math
 
 
-# initialize global variables used in your code here
+# initialize global variables
 num_range = 100
 guesses_left = 7
 
@@ -76,5 +74,5 @@ f.add_button("Range is [0, 100]", range100, 200)
 f.add_button("Range is [0, 1000]", range1000, 200)
 f.add_input("Enter a guess", input_guess, 200)
 
-# call new_game
+
 new_game()
