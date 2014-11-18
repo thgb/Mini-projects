@@ -9,3 +9,5 @@ A random selection of small python projects
 * excel csv parser
 * string character counter
 
+###STEM Ambassador code
+* Raspberry Pi Camera GUI
