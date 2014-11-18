@@ -10,7 +10,10 @@ frame = 1
 def onclick():
     pass
 
-def onKeyPress(event):
+def close_window():
+    root.destroy()
+
+def takePic():
     global frame
     camera.start_preview()
     sleep(2)
@@ -18,15 +21,13 @@ def onKeyPress(event):
     frame += 1
     camera.stop_preview()
 
+
 root = Tk()
 root.wm_title("Camera App")
 root.geometry('300x300')
-
-text = Text(root, background='black', foreground='white', font=('Comic Sans MS', 12))
-text.insert(INSERT, "Press any key to take a photograph\n")
-text.pack()
-
-root.bind('<KeyPress>', onKeyPress)
-
+a = Button(root, background='green', text="Take Pic", height=5, command=takePic, font=(30))
+b = Button(root, text="Done", height=5, command=close_window)
+a.pack()
+b.pack()
 
 root.mainloop()
