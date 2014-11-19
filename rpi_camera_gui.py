@@ -13,7 +13,7 @@ def onclick():
 def close_window():
     root.destroy()
 
-def takePic():
+def take_pic():
     global frame
     camera.start_preview()
     sleep(2)
@@ -25,7 +25,7 @@ def takePic():
 root = Tk()
 root.wm_title("Camera App")
 root.geometry('300x300')
-a = Button(root, background='green', text="Take Pic", height=5, command=takePic, font=(30))
+a = Button(root, background='green', text="Take Pic", height=5, command=take_pic, font=(30))
 b = Button(root, text="Done", height=5, command=close_window)
 a.pack()
 b.pack()
