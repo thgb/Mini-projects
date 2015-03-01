@@ -28,6 +28,7 @@ def guess_calc(high):
     return int(n)
 
 
+
 # define event handlers for control panel
 def range100():
     # button that changes the range to [0,100) and starts a new game
